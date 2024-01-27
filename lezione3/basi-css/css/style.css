@@ -1,0 +1,52 @@
+/* 
+commento
+su più righe
+*/
+div {/*peso 1*/
+    color: red;
+}
+
+#colore-verde{/*peso 100*/
+    color: green;
+}
+
+li.colore-viola{/*peso 11*/
+    color: purple;
+}
+.colore-giallo{/*peso 10*/
+    color: yellow;
+}
+
+.sottolineato{
+    text-decoration: underline;
+}
+/*
+
+specificità:
+
+tag = 1
+class = 10
+id = 100
+style="" = 1000
+
+*/
+
+
+/*aumento specificità*/
+
+li#colore-verde{} /*peso 101*/
+li#colore-verde.colore-viola{} /*peso 121*/
+.colore-viola.colore-giallo{} /*peso 20*/
+
+/*tutti i li figli di un ul*/
+ul li{}/*peso 2*/
+
+
+.genitore p{ /*peso 11*/
+    font-weight: bold;
+}
+
+li{
+    color: #000 !important;
+    text-decoration: none !important;
+}

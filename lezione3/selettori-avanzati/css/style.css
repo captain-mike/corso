@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+}
+
+/*regole per vedere le celle*/
+table{
+    width: 100%;
+}
+td{
+    border: 1px solid #000;
+}
+
+/*fine regole per vedere le celle*/
+
+tr:first-child{/*specificità 11*/
+    font-weight: bold;
+}
+
+tr:first-child td:first-child:first-letter{/*specificità 11*/
+    color: red;
+}
+
+tr:nth-of-type(odd){
+    background-color: #ccc;
+}
+
+td:hover{/*quando il mouse passa sopra ad una td*/
+    font-size: 20px;
+}
+
+/*pseudoelementi*/
+
+tr td:first-child::before{
+    content: "#";
+}
+tr td:first-child::after{
+    content: "#";
+}
