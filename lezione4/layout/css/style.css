@@ -1,0 +1,22 @@
+.genitore{
+    text-align: center;
+}
+a{
+    background-color: red;
+}
+
+/*layout a griglia*/
+
+.container{
+    text-align: center;
+    background-color: aquamarine;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.colonna{
+    height: 200px;
+    width: calc(100% / 3 - 3px);
+    background-color: bisque;
+    display: inline-block;
+}

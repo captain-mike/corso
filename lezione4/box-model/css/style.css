@@ -1,0 +1,69 @@
+.rettangolo-elastico{
+    min-height: 100px;
+    max-width: 800px;
+    /*
+    possibilità per gestire le larghezze:
+
+    height/min-height/max-height
+    width/min-width/max-width
+    */
+    background-color: red;
+}
+.quadrato.overflow{/*peso 20*/
+    overflow-y: auto;
+}
+
+.quadrato{/*peso 10*/
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: #fff;
+}
+
+
+.quadrato.con-padding{
+    
+    padding: 15px;
+    /*
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    
+    padding: 15px 15px; => primo valore va sopra e sotto e l'altro va a sinistra e destra
+    
+    padding: 15px 15px 15px 15px; i valori vanno in senso orario partendo dall'alto 
+    */
+    box-sizing: border-box;
+}
+
+
+
+.quadrato.con-border{
+    border: 10px dashed #000;
+    border-bottom: none;
+}
+
+.quadrato.arrotondato{
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: transparent;
+}
+
+
+
+.quadrato.con-margin{
+    margin: 100px;
+     /*
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    
+    margin: 15px 15px; => primo valore va sopra e sotto e l'altro va a sinistra e destra
+    
+    margin: 15px 15px 15px 15px; i valori vanno in senso orario partendo dall'alto 
+
+    I VALORI DI MARGIN POSSONO ESSERE ANCHE NUMERI NEGATIVI
+    */
+}
